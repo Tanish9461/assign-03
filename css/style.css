@@ -1,0 +1,110 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle, rgba(18, 18, 52, 1) 0%, rgba(10, 10, 25, 1) 100%);
+    color: #E0E0FF;
+    text-align: center;
+}
+
+.container {
+    background-color: #101030;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #000000;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #FFD700;
+}
+
+.form-section,
+.toppings div,
+.delivery label {
+    margin: 10px 0;
+    position: relative;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1 px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #181848;
+    color: #E0E0FF;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.toppings div,
+.delivery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+#orderSummary {
+    background-color: #181848;
+    color: #FFD700;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: none;
+    /* Initially hidden */
+}
+
+/* Galactic Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.container {
+    animation: float 6s ease-in-out infinite;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Pizza Order Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/json.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Galactic Pizza Order Command Center</h1>
+        <form id="pizzaOrderForm">
+            <div class="form-section">
+                <label for="pizzaSize">Galaxy Size:</label>
+                <select id="pizzaSize" name="size">
+                    <option value="moon">Moon (Small)</option>
+                    <option value="planet">Planet (Medium)</option>
+                    <option value="star">Star (Large)</option>
+                </select>
+            </div>
+            <div class="form-section">
+                <label for="pizzaCrust">Crust Composition:</label>
+                <select id="pizzaCrust" name="crust">
+                    <option value="nebula">Nebula Neapolitan</option>
+                    <option value="cosmic">Cosmic Thin</option>
+                    <option value="blackHole">Black Hole Deep Dish</option>
+                </select>
+            </div>
+            <div class="form-section toppings">
+                <label>Interstellar Toppings:</label>
+                <div><input type="checkbox" name="toppings" value="Meteor Meatballs"> Meteor Meatballs</div>
+                <div><input type="checkbox" name="toppings" value="Alien Anchovies"> Alien Anchovies</div>
+                <div><input type="checkbox" name="toppings" value="Space Sauce"> Space Sauce</div>
+                <div><input type="checkbox" name="toppings" value="Cheese from the Moon"> Cheese from the Moon</div>
+            </div>
+            <!-- Space Extras Selection -->
+            <div class="form-section extras">
+                <label>Space Extras:</label>
+                <div><input type="checkbox" name="extras" value="Lunar Garlic Bread"> Lunar Garlic Bread</div>
+                <div><input type="checkbox" name="extras" value="Asteroid Chicken Wings"> Asteroid Chicken Wings</div>
+                <div><input type="checkbox" name="extras" value="Comet Coleslaw"> Comet Coleslaw</div>
+                <div><input type="checkbox" name="extras" value="Saturn Rings Onion Rings"> Saturn Rings Onion Rings
+                </div>
+            </div>
+            <div class="form-section">
+                <label for="customerName">Space Explorer Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+            </div>
+            <div class="form-section">
+                <label for="customerEmail">Comms Channel (Email):</label>
+                <input type="email" id="customerEmail" name="customerEmail" required>
+            </div>
+            <div class="form-section delivery">
+                <input type="checkbox" id="deliveryOption" name="delivery">
+                <label for="deliveryOption">Warp Speed Delivery?</label>
+            </div>
+            <div class="form-section" id="addressSection" style="display:none;">
+                <label for="deliveryAddress">Galactic Coordinates (Address):</label>
+                <textarea id="deliveryAddress" name="deliveryAddress"></textarea>
+            </div>
+            <button type="button" id="orderButton">Launch Order</button>
+        </form>
+        <p id="studentInfo"></p>
+        <div id="orderSummary"></div>
+    </div>
+</body>
+
+</html>
